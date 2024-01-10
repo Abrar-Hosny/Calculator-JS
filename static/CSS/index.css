@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(228, 228, 228);
+}
+
+#calculator{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    border-radius: 50px;
+    max-width: 500px;
+    overflow: hidden;
+}
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: black;
+    color: white;
+
+}
+#keys{
+    display: grid;
+    /*  here we want 4 colums */
+    grid-template-columns: repeat(4,1fr);
+    /* this gap between each row */
+    gap: 10px;
+    /* padding around keys */
+    padding: 25px;
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+    border: none;
+    background-color: rgb(54, 56, 54);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* hover sudoclass */
+/* here when we hover it light up */
+
+button:hover{
+    background-color: rgb(116, 116, 116);
+
+}
+
+/*active sudoclass*/
+/* here when we click on button it flashes moment */
+button:active{
+    background-color: rgb(241, 238, 238);
+}
+.operator-btn{
+    background-color: blue;
+}
+.operator-btn:hover{
+    background-color: rgba(83, 83, 230, 0.747)
+}
+.operator-btn:active{
+    background-color: rgba(166, 166, 245, 0.747)
+}
